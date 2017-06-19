@@ -64,6 +64,9 @@ table {
   font-family: 'Basis Grotesque', sans-serif;
   overflow-x: hidden;
   /*mailchimp styling*/ }
+  @media screen and (max-width: 740px) {
+    #site .mobile {
+      display: none !important; } }
   #site.fix {
     overflow: hidden; }
   #site h1,
@@ -109,12 +112,29 @@ table {
     height: 66vh;
     margin: auto;
     overflow: hidden; }
+    @media screen and (max-width: 740px) {
+      #site .content {
+        top: 0 !important;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        position: static;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-top: 9%;
+        padding: 0 5rem;
+        width: 100% !important;
+        height: auto !important;
+        overflow: auto; } }
   #site #right,
   #site #left {
     position: absolute;
     width: 50%;
     height: 100%;
     z-index: 1000; }
+    @media screen and (max-width: 740px) {
+      #site #right,
+      #site #left {
+        display: none; } }
   #site #left {
     left: 0; }
     #site #left:hover {
@@ -130,6 +150,13 @@ table {
     white-space: nowrap; }
     #site #content_container.animate {
       transition: left ease 0.3s; }
+    @media screen and (max-width: 740px) {
+      #site #content_container {
+        position: static;
+        left: auto !important;
+        top: 0 !important;
+        width: 100%;
+        height: auto; } }
   #site .image1,
   #site .image2 {
     display: inline-block;
@@ -138,6 +165,13 @@ table {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important; }
+    @media screen and (max-width: 740px) {
+      #site .image1,
+      #site .image2 {
+        display: block;
+        width: 100%;
+        padding-bottom: 70%;
+        margin-bottom: 7rem; } }
   #site .image1 {
     background: url(../images/1.jpg); }
   #site .image2 {
@@ -146,9 +180,18 @@ table {
     display: inline-block;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 2rem 2rem 0 2rem;
     vertical-align: top;
-    background-color: red;
+    background-color: #d7512d;
     text-align: center; }
+    @media screen and (max-width: 740px) {
+      #site #content_text {
+        display: block;
+        width: 100%;
+        padding-bottom: 70%;
+        margin-bottom: 7rem; } }
   #site .about {
     display: none;
     position: fixed;
