@@ -55,7 +55,7 @@ table {
 
 @font-face {
   font-family: 'Basis Grotesque';
-  src: url("../fonts/basisgrotesque-medium-webfont.woff2") format("woff2"), url("../fonts/basisgrotesque-medium-webfont.woff") format("woff"), url("../fonts/basisgrotesque-medium-webfont.ttf") format("truetype");
+  src: url("../fonts/basisgrotesque-medium-webfont.woff2") format("woff2"), url("../fonts/basisgrotesque-medium-webfont.woff") format("woff"), url("../fonts/BasisGrotesque-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 #site {
