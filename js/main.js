@@ -37,13 +37,13 @@ setupSlideshow = function(){
   Site.container.css('height', Site.content_container_height + 'px');
 
   Site.slide_position = Site.content_container_width * Site.position * -1;
-  Site.content_container.css('left', Site.slide_position + 'px');
+  Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
 
 }
 
 setupFirstPosition = function () {
   Site.first_position = Site.content_container_width * -1;
-  Site.content_container.css('left', Site.first_position + 'px')
+  Site.content_container.css('transform', 'translateX(' + Site.first_position + 'px)')
   Site.content_container.addClass('animate');
 }
 
@@ -52,18 +52,18 @@ slideshowNext = function(){
 
   if (Site.position >= 3){
     Site.slide_position = Site.content_container_width * -3;
-    Site.content_container.css('left', Site.slide_position + 'px');
+    Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
     Site.position = 0;
     setTimeout(function(){
       Site.content_container.removeClass('animate');
-      Site.content_container.css('left', '0px');
+      Site.content_container.css('transform', 'translateX(0px)');
       setTimeout(function(){
         Site.content_container.addClass('animate');
       }, 100);
     }, 300);
   } else {
     Site.slide_position = Site.content_container_width * Site.position * -1;
-    Site.content_container.css('left', Site.slide_position + 'px');
+    Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
   }
 
 }
@@ -72,11 +72,11 @@ slideshowPrev = function(){
   Site.position = Site.position - 1;
 
   if (Site.position <= 0){
-    Site.content_container.css('left', '0px');
+    Site.content_container.css('transform', 'translateX(0px)');
     setTimeout(function(){
       Site.content_container.removeClass('animate');
       Site.slide_position = Site.content_container_width * -3;
-      Site.content_container.css('left', Site.slide_position + 'px');
+      Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
       setTimeout(function(){
         Site.content_container.addClass('animate');
         Site.position = 3;
@@ -84,6 +84,6 @@ slideshowPrev = function(){
     }, 300);
   } else {
     Site.slide_position = Site.content_container_width * Site.position * -1;
-    Site.content_container.css('left', Site.slide_position + 'px');
+    Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
   }
 }
