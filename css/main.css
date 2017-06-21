@@ -77,9 +77,13 @@ table {
   #site h1 {
     font-size: 3rem;
     letter-spacing: 0.05em; }
+    #site h1 br {
+      display: none; }
     @media screen and (max-width: 740px) {
       #site h1 {
-        font-size: 4.4rem; } }
+        font-size: 4.4rem; }
+        #site h1 br {
+          display: block; } }
   #site #title {
     margin-top: 1rem;
     margin-bottom: 1rem; }
@@ -100,7 +104,8 @@ table {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; }
+    width: 100%;
+    z-index: 100; }
   #site .content {
     position: fixed;
     top: 50%;
@@ -130,7 +135,7 @@ table {
     position: absolute;
     width: 50%;
     height: 100%;
-    z-index: 1000; }
+    z-index: 100; }
     @media screen and (max-width: 740px) {
       #site #right,
       #site #left {
@@ -147,7 +152,8 @@ table {
     position: relative;
     width: auto;
     height: 100%;
-    white-space: nowrap; }
+    white-space: nowrap;
+    z-index: 1; }
     #site #content_container.animate {
       transition: transform ease 0.3s;
       -webkit-transition: transform ease 0.3s; }
@@ -157,7 +163,11 @@ table {
         left: auto !important;
         top: 0 !important;
         width: 100%;
-        height: auto; } }
+        margin-top: 6rem;
+        margin-bottom: 13rem;
+        height: auto;
+        -webkit-transform: translateX(0) !important;
+        transform: translateX(0) !important; } }
   #site .image1,
   #site .image2 {
     display: inline-block;
@@ -165,14 +175,15 @@ table {
     height: 100%;
     background-size: cover !important;
     background-position: center !important;
-    background-repeat: no-repeat !important; }
+    background-repeat: no-repeat !important;
+    z-index: 1; }
     @media screen and (max-width: 740px) {
       #site .image1,
       #site .image2 {
         display: block;
         width: 100%;
         padding-bottom: 70%;
-        margin-bottom: 7rem; } }
+        margin-bottom: 5rem; } }
   #site .image1 {
     background: url(../images/1.jpg); }
   #site .image2 {
@@ -186,7 +197,8 @@ table {
     padding: 2rem 2rem 0 2rem;
     vertical-align: top;
     background-color: #d7512d;
-    text-align: center; }
+    text-align: center;
+    z-index: 1; }
     @media screen and (max-width: 740px) {
       #site #content_text {
         display: block;
@@ -194,8 +206,8 @@ table {
         padding-bottom: 70%;
         margin-bottom: 7rem; } }
   #site .about {
-    display: none;
     position: fixed;
+    display: none;
     top: 0;
     bottom: 0;
     left: 0;
@@ -239,27 +251,51 @@ table {
       left: 0;
       text-align: center;
       display: inline-block; }
+      @media screen and (max-width: 740px) {
+        #site .bottom #waitlist {
+          left: 0;
+          right: 0;
+          width: 25rem;
+          margin: auto;
+          text-align: left; } }
       #site .bottom #waitlist h1,
       #site .bottom #waitlist #mc_embed_signup {
         vertical-align: middle;
         display: inline-block; }
       #site .bottom #waitlist h1 {
         margin-bottom: 0.3rem; }
+        #site .bottom #waitlist h1 br {
+          display: none; }
+        @media screen and (max-width: 740px) {
+          #site .bottom #waitlist h1 {
+            display: inline;
+            text-align: left;
+            line-height: 1.2em; }
+            #site .bottom #waitlist h1 br {
+              display: block; } }
       #site .bottom #waitlist #mc_embed_signup {
         margin-left: 1rem; }
+    #site .bottom a:link,
+    #site .bottom a:visited {
+      color: #fff;
+      text-decoration: none; }
+      #site .bottom a:link img,
+      #site .bottom a:visited img {
+        display: none; }
+        @media screen and (max-width: 740px) {
+          #site .bottom a:link img,
+          #site .bottom a:visited img {
+            display: block;
+            bottom: 2rem;
+            left: 2rem;
+            text-align: left; } }
     #site .bottom #contact {
       position: fixed;
       bottom: 1.5rem;
       left: 2rem; }
-      #site .bottom #contact a:link,
-      #site .bottom #contact a:visited {
-        color: #fff;
-        text-decoration: none; }
       @media screen and (max-width: 740px) {
         #site .bottom #contact {
-          bottom: 6rem;
-          left: 2rem;
-          text-align: left; } }
+          display: none; } }
     #site .bottom img {
       position: fixed;
       bottom: 1.2rem;
@@ -268,8 +304,8 @@ table {
       width: 4.2%; }
       @media screen and (max-width: 740px) {
         #site .bottom img {
-          width: 12%;
-          bottom: 2.2rem; } }
+          width: 11.9%;
+          bottom: 2rem; } }
   #site #toggle_about:hover {
     cursor: pointer; }
   #site ::-webkit-input-placeholder {
@@ -311,7 +347,8 @@ table {
     vertical-align: middle; }
     @media screen and (max-width: 740px) {
       #site input[type="email"] {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        border: 2px solid white; } }
   #site input:focus {
     border-radius: 0px;
     -webkit-border-radius: 0px;

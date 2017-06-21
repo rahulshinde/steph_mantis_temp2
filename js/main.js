@@ -87,3 +87,13 @@ slideshowPrev = function(){
     Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
   }
 }
+
+function preload(sources)
+{
+  console.log(sources);
+  var images = [];
+  for (i = 0, length = sources.length; i < length; ++i) {
+    images[i] = new Image();
+    images[i].src = sources[i];
+  }
+}
