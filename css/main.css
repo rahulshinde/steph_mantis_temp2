@@ -81,7 +81,8 @@ table {
       display: none; }
     @media screen and (max-width: 740px) {
       #site h1 {
-        font-size: 4.4rem; }
+        font-size: 4.4rem;
+        line-height: 1.15em; }
         #site h1 br {
           display: block; } }
   #site #title {
@@ -163,7 +164,7 @@ table {
         left: auto !important;
         top: 0 !important;
         width: 100%;
-        margin-top: 6rem;
+        margin-top: 7rem;
         margin-bottom: 13rem;
         height: auto;
         -webkit-transform: translateX(0) !important;
@@ -270,7 +271,7 @@ table {
           #site .bottom #waitlist h1 {
             display: inline;
             text-align: left;
-            line-height: 1.2em; }
+            line-height: 1.15em; }
             #site .bottom #waitlist h1 br {
               display: block; } }
       #site .bottom #waitlist #mc_embed_signup {
