@@ -50,8 +50,8 @@ setupFirstPosition = function () {
 slideshowNext = function(){
   Site.position = Site.position + 1;
 
-  if (Site.position >= 3){
-    Site.slide_position = Site.content_container_width * -3;
+  if (Site.position >= 5){
+    Site.slide_position = Site.content_container_width * -5;
     Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
     Site.position = 0;
     setTimeout(function(){
@@ -75,11 +75,11 @@ slideshowPrev = function(){
     Site.content_container.css('transform', 'translateX(0px)');
     setTimeout(function(){
       Site.content_container.removeClass('animate');
-      Site.slide_position = Site.content_container_width * -3;
+      Site.slide_position = Site.content_container_width * -5;
       Site.content_container.css('transform', 'translateX(' + Site.slide_position + 'px)');
       setTimeout(function(){
         Site.content_container.addClass('animate');
-        Site.position = 3;
+        Site.position = 5;
       }, 100);
     }, 300);
   } else {
