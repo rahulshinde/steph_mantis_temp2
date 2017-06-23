@@ -120,7 +120,7 @@ table {
     height: 66vh;*/
     width: 99vh;
     height: auto;
-    margin: 18vh auto 2rem auto;
+    margin: 17vh auto 2rem auto;
     /*overflow: hidden;*/ }
     @media screen and (max-width: 740px) {
       #site .content {
@@ -176,7 +176,7 @@ table {
   #site .image2 {
     display: block;
     width: 100%;
-    margin-bottom: 18vh;
+    margin-bottom: 17vh;
     /*background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;*/ }
@@ -196,7 +196,7 @@ table {
     height: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 0 2rem 18vh 2rem;
+    padding: 0 2rem 17vh 2rem;
     vertical-align: top;
     /*background-color: #3399cc;*/
     text-align: center;
