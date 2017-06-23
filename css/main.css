@@ -108,16 +108,18 @@ table {
     width: 100%;
     z-index: 100; }
   #site .content {
-    position: fixed;
+    /*position: fixed;
     top: 50%;
     left: 0;
     right: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     width: 99vh;
-    height: 66vh;
-    margin: auto;
-    overflow: hidden; }
+    height: 66vh;*/
+    width: 50rem;
+    height: auto;
+    margin: 4.9rem auto;
+    /*overflow: hidden;*/ }
     @media screen and (max-width: 740px) {
       #site .content {
         top: 0 !important;
@@ -136,7 +138,8 @@ table {
     position: absolute;
     width: 50%;
     height: 100%;
-    z-index: 100; }
+    z-index: 100;
+    display: none; }
     @media screen and (max-width: 740px) {
       #site #right,
       #site #left {
@@ -151,9 +154,7 @@ table {
       cursor: url(../images/arrow-right.png), e-resize; }
   #site #content_container {
     position: relative;
-    width: auto;
-    height: 100%;
-    white-space: nowrap;
+    width: 100%;
     z-index: 1; }
     #site #content_container.animate {
       transition: transform ease 0.3s;
@@ -171,13 +172,12 @@ table {
         transform: translateX(0) !important; } }
   #site .image1,
   #site .image2 {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: 100%;
-    background-size: cover !important;
+    margin-bottom: 9%;
+    /*background-size: cover !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
-    z-index: 1; }
+    background-repeat: no-repeat !important;*/ }
     @media screen and (max-width: 740px) {
       #site .image1,
       #site .image2 {
@@ -190,22 +190,23 @@ table {
   #site .image2 {
     background: url(../images/2.jpg); }
   #site #content_text {
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 2rem 2rem 0 2rem;
+    padding: 0 2rem 9% 2rem;
     vertical-align: top;
-    background-color: #3399cc;
+    /*background-color: #3399cc;*/
     text-align: center;
     z-index: 1;
-    white-space: initial; }
+    white-space: initial;
+    overflow: scroll; }
     #site #content_text h2 {
-      font-size: 1.39vh;
-      margin-bottom: 1.39vh; }
+      font-size: 1.3rem;
+      margin-bottom: 1em; }
     #site #content_text p {
-      font-size: 1.39vh; }
+      font-size: 0.9rem; }
       #site #content_text p a:link,
       #site #content_text p a:visited {
         color: white; }
@@ -260,7 +261,8 @@ table {
       bottom: 1rem;
       left: 0;
       text-align: center;
-      display: inline-block; }
+      display: inline-block;
+      z-index: 10; }
       @media screen and (max-width: 740px) {
         #site .bottom #waitlist {
           left: 0;
@@ -302,7 +304,8 @@ table {
     #site .bottom #contact {
       position: fixed;
       bottom: 1.5rem;
-      left: 2rem; }
+      left: 2rem;
+      z-index: 100; }
       @media screen and (max-width: 740px) {
         #site .bottom #contact {
           display: none; } }
