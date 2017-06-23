@@ -196,7 +196,7 @@ table {
     height: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 0 2rem 17vh 2rem;
+    padding: 0 0 17vh 0;
     vertical-align: top;
     /*background-color: #3399cc;*/
     text-align: center;
