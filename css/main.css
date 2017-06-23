@@ -59,7 +59,7 @@ table {
   font-weight: normal;
   font-style: normal; }
 #site {
-  background-color: #ef6d9f;
+  background-color: #000;
   color: #fff;
   font-family: 'Basis Grotesque', sans-serif;
   overflow-x: hidden;
@@ -274,6 +274,13 @@ table {
           left: 0;
           right: 0;
           width: 25rem;
+          margin: auto;
+          text-align: left; } }
+      @media screen and (max-width: 550px) {
+        #site .bottom #waitlist {
+          left: 0;
+          right: 0;
+          width: 27rem;
           margin: auto;
           text-align: left; } }
       #site .bottom #waitlist h1,
