@@ -166,7 +166,7 @@ table {
         top: 0 !important;
         width: 100%;
         margin-top: 7rem;
-        margin-bottom: 13rem;
+        margin-bottom: 7rem;
         height: auto;
         -webkit-transform: translateX(0) !important;
         transform: translateX(0) !important; } }
@@ -183,12 +183,11 @@ table {
       #site .image2 {
         display: block;
         width: 100%;
-        padding-bottom: 70%;
         margin-bottom: 5rem; } }
   #site .image1 {
-    background: url(../images/1.jpg); }
+    /*background: url(../images/1.jpg);*/ }
   #site .image2 {
-    background: url(../images/2.jpg); }
+    /*background: url(../images/2.jpg);*/ }
   #site #content_text {
     display: block;
     width: 100%;
@@ -205,17 +204,22 @@ table {
     #site #content_text h2 {
       font-size: 1.3rem;
       margin-bottom: 1em; }
+      @media screen and (max-width: 740px) {
+        #site #content_text h2 {
+          font-size: 2.5rem; } }
     #site #content_text p {
       font-size: 0.9rem; }
       #site #content_text p a:link,
       #site #content_text p a:visited {
         color: white; }
+      @media screen and (max-width: 740px) {
+        #site #content_text p {
+          font-size: 2rem; } }
     @media screen and (max-width: 740px) {
       #site #content_text {
         display: block;
         width: 100%;
-        padding-bottom: 70%;
-        margin-bottom: 7rem; } }
+        padding-bottom: 5rem; } }
   #site .about {
     position: fixed;
     display: none;
@@ -309,6 +313,8 @@ table {
       @media screen and (max-width: 740px) {
         #site .bottom #contact {
           display: none; } }
+    #site .bottom #contact_img {
+      z-index: 100; }
     #site .bottom img {
       position: fixed;
       bottom: 1.2rem;
