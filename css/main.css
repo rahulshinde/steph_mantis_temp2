@@ -64,6 +64,8 @@ table {
   font-family: 'Basis Grotesque', sans-serif;
   overflow-x: hidden;
   /*mailchimp styling*/ }
+  #site #about_image_preload {
+    width: 100%; }
   @media screen and (max-width: 740px) {
     #site .mobile {
       display: none !important; } }
@@ -116,7 +118,7 @@ table {
     -webkit-transform: translateY(-50%);
     width: 99vh;
     height: 66vh;*/
-    width: 50rem;
+    width: 45rem;
     height: auto;
     margin: 4.9rem auto 2rem auto;
     /*overflow: hidden;*/ }
@@ -174,7 +176,7 @@ table {
   #site .image2 {
     display: block;
     width: 100%;
-    margin-bottom: 9%;
+    margin-bottom: 10%;
     /*background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;*/ }
@@ -194,7 +196,7 @@ table {
     height: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 0 2rem 9% 2rem;
+    padding: 0 2rem 10% 2rem;
     vertical-align: top;
     /*background-color: #3399cc;*/
     text-align: center;
