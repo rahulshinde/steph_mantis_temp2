@@ -118,7 +118,7 @@ table {
     height: 66vh;*/
     width: 50rem;
     height: auto;
-    margin: 4.9rem auto;
+    margin: 4.9rem auto 2rem auto;
     /*overflow: hidden;*/ }
     @media screen and (max-width: 740px) {
       #site .content {
